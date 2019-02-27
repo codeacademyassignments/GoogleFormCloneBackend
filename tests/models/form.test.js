@@ -46,3 +46,19 @@ describe('getAllForms', () => {
     expect(Object.keys(forms[0].dataValues)).toEqual(['formName', 'createdAt']);
   });
 });
+
+describe('createFormWithFields', () => {
+  beforeEach(async () => {
+    await model.Form.truncate();
+  });
+  it('should create Form with fields joined with separator', async () => {
+    const fields = ['firstName'];
+    const formName = 'StudentInfo';
+    expect((await model.Form.createFormWithFields(formName, fields)).fields).toEqual('firstName');
+  });
+  it('should create Form with fields joined with separator', async () => {
+    const fields = ['firstName', 'lastName', 'mobile', 'address', 'mobile', 'nickname'];
+    const formName = 'StudentInfo';
+    expect((await model.Form.createFormWithFields(formName, fields)).formName).toEqual('StudentInfo');
+  });
+});
