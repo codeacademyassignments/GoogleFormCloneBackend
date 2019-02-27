@@ -1,5 +1,5 @@
 const Hapi = require('hapi');
-const routes = require('./routes/getAllForms');
+const routes = require('./routes/allRoutes');
 
 const server = Hapi.server({
   port: 8080,
