@@ -10,5 +10,9 @@ module.exports = (sequelize, DataTypes) => {
   Form.generate = formName => Form.create({
     formName,
   });
+
+  Form.getAllForms = () => Form.findAll({
+    attributes: ['formName', 'createdAt'],
+  });
   return Form;
 };

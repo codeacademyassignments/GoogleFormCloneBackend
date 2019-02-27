@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "hapi": "^18.1.0",
     "jest": "^24.1.0",
+    "nodemon": "^1.18.10",
     "pg": "^7.8.1",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.42.0",
