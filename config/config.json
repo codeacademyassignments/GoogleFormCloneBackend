@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "Pulkit_Agarwal-BNG",
+    "password": null,
+    "database": "formdatadev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "Pulkit_Agarwal-BNG",
+    "password": null,
+    "database": "formdatatest",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "Pulkit_Agarwal-BNG",
+    "password": null,
+    "database": "formdataprod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
